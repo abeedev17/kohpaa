@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kohpa Solution</title>
+<style>
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("./assets/images/legal.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 900px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+
+    .content {
+      width: 50%;
+    }
+
+    .image {
+      width: 50%;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <h1>Solutions</h1>
+    <h4>Tailored Heating Solutions 
+        for Every Sector</h4>
+    <h5>Residential Solutions: 
+        Enhance the comfort of your home with our efficient 
+        and safe heating systems.</h5>
+        <h5>Commercial Solutions: : 
+            Reliable and cost-effective heating solutions 
+for businesses of all sizes.</h5>
+            <h5>Case Studies & Client Testimonials: : 
+                Real-world examples of how our technology 
+                 is making a difference.</h5>
+  </div>
+  <div class="image">
+    <img src="./assets/images/home.jpeg" alt="Placeholder Image"> <!-- Replace with your image source -->
+  </div>
+</div>
+</body>
+</html>

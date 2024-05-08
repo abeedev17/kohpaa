@@ -1,0 +1,336 @@
+/* Responsve Styling */
+
+@media only screen and (max-width: 1400px) {
+    .about .banner_head {
+        font-size: 32px;
+    }
+    .service_mainImg {
+        height: 280px;
+    }
+    .serv_proof {
+        height: 180px;
+    }
+    .serv_elecSign {
+        width: 38px;
+    }
+    .service_crd:before {
+        height: 37.3%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .logo {
+        width: 120px;
+    }
+    .banner_head {
+        font-size: 39px;
+    }
+    .banner_logo {
+        width: 151px;
+        height: 28px;
+    }
+    .themebtn {
+        padding: 7px;
+        font-size: 13px;
+    }
+    .team_con p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .banner__img img {
+        object-position: right;
+    }
+    .banner__img:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: linear-gradient(180deg, black, transparent);
+    }
+    .banner {
+        min-height: 100vh;
+    }
+    .banner_slider .slick-dots {
+        left: -73px;
+        bottom: -40px !important;
+    }
+    .header_nav {
+        width: 100%;
+    }
+    .about .banner_head {
+        font-size: 24px;
+    }
+    .banner_logo--alt {
+        width: 105px;
+        height: 30px;
+    }
+    .about_con p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .section_content .heading {
+        font-size: 33px;
+    }
+    .section_content p {
+        font-size: 14px !important;
+    }
+    .service_mainImg {
+        height: 320px;
+        width: 230px;
+    }
+    .serv_elecSign {
+        width: 50px;
+        height: 50px;
+        right: 61px;
+    }
+    .serv_proof {
+        width: 240px;
+    }
+    .service_img {
+        top: 13px;
+    }
+    .service_crd {
+        margin: 10px 0;
+        margin: 10px auto;
+    }
+    .material_img {}
+    .material {
+        min-height: 100vh;
+        padding: 0;
+    }
+    .team_bg img {
+        /* object-position: 15%; */
+        object-fit: cover;
+    }
+    .team_bg:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* content: ''; */
+        background: linear-gradient(360deg, #ffffffad, transparent);
+    }
+    .footer_head {
+        margin: 20px 0 0;
+    }
+    .footer_main p {
+        font-size: 14px;
+    }
+    .footer_logo {
+        height: 39px;
+    }
+    .footer {
+        padding: 70px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        width: 120px;
+    }
+    .banner_head {
+        font-size: 29px;
+    }
+    .banner_logo {
+        width: 115px;
+        height: 23px;
+    }
+    .themebtn {
+        padding: 7px;
+        font-size: 13px;
+    }
+    .banner__img img {
+        object-position: right;
+    }
+    .banner__img:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: linear-gradient(180deg, black, transparent);
+    }
+    .banner {
+        min-height: 100vh;
+    }
+    .banner_slider .slick-dots {
+        display: none !important;
+    }
+    .header_nav {
+        width: 100%;
+    }
+    .about .banner_head {
+        font-size: 24px;
+    }
+    .banner_logo--alt {
+        width: 105px;
+        height: 30px;
+    }
+    .about_con p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .section_content .heading {
+        font-size: 40px;
+    }
+    .section_content p {
+        font-size: 16px;
+    }
+    .service_mainImg {
+        height: 320px;
+        width: 230px;
+    }
+    .serv_elecSign {
+        width: 50px;
+        height: 50px;
+        right: 61px;
+    }
+    .serv_proof {
+        width: 240px;
+    }
+    .service_img {
+        top: 1px;
+    }
+    .service_crd {
+        margin: 10px 0;
+        width: 380px;
+        margin: 10px auto;
+    }
+    .material_img {
+        display: none;
+    }
+    .material {
+        min-height: 100vh;
+        padding: 0;
+    }
+    .team_bg img {
+        object-position: 15%;
+        object-fit: cover;
+    }
+    .team_bg:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: linear-gradient(360deg, #ffffffad, transparent);
+    }
+    .footer_head {
+        margin: 20px 0 0;
+    }
+    .footer_main p {
+        font-size: 14px;
+    }
+    .footer_logo {
+        height: 39px;
+    }
+    .footer {
+        padding: 70px 0;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    .logo {
+        width: 120px;
+    }
+    .banner_head {
+        font-size: 24px;
+    }
+    .banner_logo {
+        width: 91px;
+        height: 18px;
+    }
+    .themebtn {
+        padding: 7px;
+        font-size: 13px;
+    }
+    .banner__img img {
+        object-position: right;
+    }
+    .banner__img:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: linear-gradient(180deg, black, transparent);
+    }
+    .banner {
+        min-height: 100vh;
+    }
+    .banner_slider .slick-dots {
+        display: none !important;
+    }
+    .header_nav {
+        width: 100%;
+    }
+    .about .banner_head {
+        font-size: 15px;
+    }
+    .banner_logo--alt {
+        width: 70px;
+    }
+    .about_con p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .new_btn img:nth-child(1) {
+        width: 210px;
+        height: 45px;
+    }
+    .second_img {
+        right: 0;
+        height: 30px;
+    }
+    .section_content .heading {
+        font-size: 27px;
+    }
+    .section_content p {
+        font-size: 12px;
+    }
+    .service_mainImg {
+        height: 250px;
+        width: 200px;
+    }
+    .serv_elecSign {
+        width: 40px;
+        height: 40px;
+        right: 76px;
+    }
+    .serv_proof {
+        width: 180px;
+    }
+    .service_img {
+        top: 40px;
+    }
+    .service_crd {
+        margin: 10px 0;
+        width: fit-content;
+    }
+    .material_img {
+        display: none;
+    }
+    .material {
+        min-height: 100vh;
+        padding: 0;
+    }
+    .team_bg img {
+        object-position: 15%;
+        object-fit: cover;
+    }
+    .team_bg:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: linear-gradient(360deg, #fff, transparent);
+    }
+    .footer_head {
+        margin: 20px 0 0;
+    }
+    .footer_main p {
+        font-size: 14px;
+    }
+    .footer_logo {
+        height: 39px;
+    }
+    .footer {
+        padding: 70px 0;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kohpa About Us</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css'>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<style>
+body {
+    background-image: url('assets/images/about.png');
+    padding: 2rem 0rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.card {
+    width: 20rem;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Gradient from transparent to white */
+}
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limit the number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 992px) {
+    .card {
+        width: 100%; /* Set card width to full width on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        justify-content: center; /* Center items on smaller screens */
+    }
+
+    .item {
+        width: calc(50% - 20px); /* Adjust width of each item for two-column layout */
+    }
+}
+
+
+
+.logo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999; /* Ensures the logo is on top of other content */
+}
+
+.logo-img {
+    width: 50px; /* Set the width of the logo */
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 9999; /* Ensures the icons are on top of other content */
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px; /* Set the width and height of the icons */
+    height: 40px;
+    border-radius: 50%; /* Make the icons round */
+    background-color: red; /* Background color */
+    text-align: center;
+    line-height: 40px; /* Center the icon vertically */
+    font-size: 24px; /* Increase the icon size */
+    margin: 0 10px; /* Add spacing between icons */
+    color: black; /* Icon color */
+}
+
+.about-us {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.company-history {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-img-top {
+    height: 200px; /* Set the height of the card image */
+    object-fit: cover; /* Ensure the image covers the entire space */
+}
+
+.card-body {
+    height: 20rem; /* Set a fixed height for the card body */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Add ellipsis for long content */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+</style>
+<body class="hm-gradient">
+<main>
+    <div class="about-us">
+        <h2><strong>About Us</strong></h2>
+        <p>Our Journey to Innovation</p>
+    </div>
+    <div class="company-history">
+        <strong>
+            <p>Company History: Since our inception, KohPa has been at the forefront of innovative <br> infrared heating technology, driven by a commitment to <br> sustainability, energy efficiency, and innovation.</p>
+        </strong>
+    </div>
+
+    <!-- Cards -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/images/home.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"> <p  style="color: black; font-weight: bold; ">Mission & Vision: </p>  <br>
+
+                            Our missiion is to provide <br>
+                            energy-efficient heating <br>
+                            solutions that help reduce <br>
+                            carbon footprints and promote <br>
+                            environmental stepwardship <br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/images/energy.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"> <p  style="color: black; font-weight: bold; ">Leadership Team : </p>  <br>
+                        <br> Meet the experts behind <br>
+our pioneering technology
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/images/hand.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"> <p  style="color: black; font-weight: bold; ">Become an Installation partner: </p>  <br>
+                        Join us on our mission to <br>
+                        revolutionize heating solutions 
+                        <br> in North America
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js'></script>
+</body>
+</html>

@@ -1,169 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/boxicon.css" />
+    <link rel="stylesheet" href="./assets/css/boxicons.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .main_content {
+        background-image: url("assets/images/about.png");
+        padding: 6.875rem 0rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        min-height: 100vh;
+      }
+
+      .main_content .card {
+        width: 20rem;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 1)
+        ); /* Gradient from transparent to white */
+      }
+      .main_content .card-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* Limit the number of lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* Media query for smaller screens */
+      @media screen and (max-width: 992px) {
+        .main_content .card {
+          width: 100%; /* Set card width to full width on smaller screens */
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .main_content .section {
+          justify-content: center; /* Center items on smaller screens */
+        }
+
+        .main_content .item {
+          width: calc(
+            50% - 20px
+          ); /* Adjust width of each item for two-column layout */
+        }
+      }
+
+      .main_content .logo {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9999; /* Ensures the logo is on top of other content */
+      }
+
+      .main_content .logo-img {
+        width: 50px; /* Set the width of the logo */
+      }
+
+      .main_content .social-icons {
+        position: absolute;
+        bottom: 20px;
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        z-index: 9999; /* Ensures the icons are on top of other content */
+      }
+
+      .main_content .social-icons a {
+        display: inline-block;
+        width: 40px; /* Set the width and height of the icons */
+        height: 40px;
+        border-radius: 50%; /* Make the icons round */
+        background-color: red; /* Background color */
+        text-align: center;
+        line-height: 40px; /* Center the icon vertically */
+        font-size: 24px; /* Increase the icon size */
+        margin: 0 10px; /* Add spacing between icons */
+        color: black; /* Icon color */
+      }
+
+      .main_content .about-us {
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .main_content .company-history {
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .main_content .card-img-top {
+        height: 200px; /* Set the height of the card image */
+        object-fit: cover; /* Ensure the image covers the entire space */
+      }
+
+      .main_content .card-body {
+        height: 20rem; /* Set a fixed height for the card body */
+        overflow: hidden; /* Hide overflow content */
+        text-overflow: ellipsis; /* Add ellipsis for long content */
+        white-space: nowrap; /* Prevent text wrapping */
+      }
+    </style>
     <title>Kohpa About Us</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css'>
-    <link rel="stylesheet" href="style.css">
-   
-</head>
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  </head>
 
-<style>
-body {
-    background-image: url('assets/images/about.png');
-    padding: 2rem 0rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.card {
-    width: 20rem;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Gradient from transparent to white */
-}
-.card-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* Limit the number of lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-
-
-/* Media query for smaller screens */
-@media screen and (max-width: 992px) {
-    .card {
-        width: 100%; /* Set card width to full width on smaller screens */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .section {
-        justify-content: center; /* Center items on smaller screens */
-    }
-
-    .item {
-        width: calc(50% - 20px); /* Adjust width of each item for two-column layout */
-    }
-}
-
-
-
-.logo {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    z-index: 9999; /* Ensures the logo is on top of other content */
-}
-
-.logo-img {
-    width: 50px; /* Set the width of the logo */
-}
-
-.social-icons {
-    position: absolute;
-    bottom: 20px;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    z-index: 9999; /* Ensures the icons are on top of other content */
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 40px; /* Set the width and height of the icons */
-    height: 40px;
-    border-radius: 50%; /* Make the icons round */
-    background-color: red; /* Background color */
-    text-align: center;
-    line-height: 40px; /* Center the icon vertically */
-    font-size: 24px; /* Increase the icon size */
-    margin: 0 10px; /* Add spacing between icons */
-    color: black; /* Icon color */
-}
-
-.about-us {
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.company-history {
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.card-img-top {
-    height: 200px; /* Set the height of the card image */
-    object-fit: cover; /* Ensure the image covers the entire space */
-}
-
-.card-body {
-    height: 20rem; /* Set a fixed height for the card body */
-    overflow: hidden; /* Hide overflow content */
-    text-overflow: ellipsis; /* Add ellipsis for long content */
-    white-space: nowrap; /* Prevent text wrapping */
-}
-</style>
-<body class="hm-gradient">
-<main>
-    <div class="about-us">
-        <h2><strong>About Us</strong></h2>
-        <p>Our Journey to Innovation</p>
-    </div>
-    <div class="company-history">
-        <strong>
-            <p>Company History: Since our inception, KohPa has been at the forefront of innovative <br> infrared heating technology, driven by a commitment to <br> sustainability, energy efficiency, and innovation.</p>
-        </strong>
-    </div>
-
-    <!-- Cards -->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/home.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"> <p  style="color: black; font-weight: bold; ">Mission & Vision: </p>  <br>
-
-                            Our missiion is to provide <br>
-                            energy-efficient heating <br>
-                            solutions that help reduce <br>
-                            carbon footprints and promote <br>
-                            environmental stepwardship <br></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/energy.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"> <p  style="color: black; font-weight: bold; ">Leadership Team : </p>  <br>
-                        <br> Meet the experts behind <br>
-our pioneering technology
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/hand.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"> <p  style="color: black; font-weight: bold; ">Become an Installation partner: </p>  <br>
-                        Join us on our mission to <br>
-                        revolutionize heating solutions 
-                        <br> in North America
-                    </div>
-                </div>
-            </div>
+  <body>
+    <div id="main">
+      <div class="header_nav">
+        <div class="close_btn" onclick="closeside()">
+          <i class="bx bx-x"></i>
         </div>
+        <ul class="main_nav">
+          <li><a href="legal.html">Legal</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="solution.html">Solution</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="technoly.html">Technology</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </div>
+      <header class="header">
+        <div>
+          <div class="main_header">
+            <a href="./index.php" class="logo"
+              ><img src="./assets/images/logo.png" alt="" class="img__contain"
+            /></a>
+            <div class="menu_btn" onclick="openside()">
+              MENU
+              <div class="menu_lines">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="main_content">
+        <div class="about-us">
+          <h2><strong>About Us</strong></h2>
+          <p>Our Journey to Innovation</p>
+      </div>
+      <div class="company-history">
+          <strong>
+              <p>Company History: Since our inception, KohPa has been at the forefront of innovative <br> infrared heating technology, driven by a commitment to <br> sustainability, energy efficiency, and innovation.</p>
+          </strong>
+      </div>
+  
+      <!-- Cards -->
+      <div class="container mt-4">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                      <img class="card-img-top" src="assets/images/home.png" alt="Card image cap">
+                      <div class="card-body">
+                          <p class="card-text"> <p  style="color: black; font-weight: bold; ">Mission & Vision: </p>  <br>
+  
+                              Our missiion is to provide <br>
+                              energy-efficient heating <br>
+                              solutions that help reduce <br>
+                              carbon footprints and promote <br>
+                              environmental stepwardship <br></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                      <img class="card-img-top" src="assets/images/energy.png" alt="Card image cap">
+                      <div class="card-body">
+                          <p class="card-text"> <p  style="color: black; font-weight: bold; ">Leadership Team : </p>  <br>
+                          <br> Meet the experts behind <br>
+  our pioneering technology
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                      <img class="card-img-top" src="assets/images/hand.png" alt="Card image cap">
+                      <div class="card-body">
+                          <p class="card-text"> <p  style="color: black; font-weight: bold; ">Become an Installation partner: </p>  <br>
+                          Join us on our mission to <br>
+                          revolutionize heating solutions 
+                          <br> in North America
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer_bg">
+          <img src="./assets/images/footer_bg.png" alt="" class="img__cover" />
+        </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="footer_main">
+                    <a href="./index.php" class="footer_logo"
+                      ><img
+                        src="./assets/images/logo.png"
+                        alt=""
+                        class="img__contain"
+                    /></a>
+                    <p>
+                      The first paper that conducts electricity and protects
+                      against electromagnetic radiation.
+                    </p>
+                    <ul class="footer_icons">
+                      <li>
+                        <a href="#"><i class="bx bxl-vk"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bx bxl-pinterest-alt"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="footer_head">Navigation</div>
+                  <ul class="footer_nav">
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">News / Blog</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer_head">Get in Touch</div>
+              <ul class="footer_nav">
+                <li><a href="./todaywebuikit.com">todaywebuikit.com</a></li>
+                <li><a href="mail-to:hello@email.com">hello@email.com</a></li>
+                <li><a href="tell:+377 8832 9903">+377 8832 9903</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</main>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js'></script>
-</body>
+  </body>
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/bootstrap.js"></script>
+  <script src="./assets/js/slick.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script src="./assets/js/app.js"></script>
 </html>

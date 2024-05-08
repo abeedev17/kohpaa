@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>KohPa Contact</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css'>
-    <link rel="stylesheet" href="style.css">
-   
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/boxicon.css" />
+    <link rel="stylesheet" href="./assets/css/boxicons.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .main_content {
+        background-image: url("assets/images/legal.png");
+        padding: 6.875rem 0rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        min-height: 100vh;
+      }
 
-<style>
-body {
-    background-image: url('assets/images/legal.png');
-    padding: 2rem 0rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
+      .main_content .card {
+        width: 20rem;
+      }
+      /* Media query for smaller screens */
+      @media screen and (max-width: 768px) {
+        .main_content .section {
+          justify-content: center; /* Center items on smaller screens */
+        }
 
-.card {
-    width: 20rem;
-  }
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    .section {
-        justify-content: center; /* Center items on smaller screens */
-    }
+        .main_content .item {
+          width: calc(
+            50% - 20px
+          ); /* Adjust width of each item for two-column layout */
+        }
+      }
+      .main_content .jumbotron {
+        background-color: white !important;
+      }
+      .main_content .logo {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9999; /* Ensures the logo is on top of other content */
+      }
 
-    .item {
-        width: calc(50% - 20px); /* Adjust width of each item for two-column layout */
-    }
-}
-.jumbotron {
-    background-color: white !important;
-}
-.logo {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    z-index: 9999; /* Ensures the logo is on top of other content */
-}
+      .main_content .logo-img {
+        width: 50px; /* Set the width of the logo */
+      }
 
-.logo-img {
-    width: 50px; /* Set the width of the logo */
-}
-
-.social-icons {
-    position: absolute;
+      .main_content .social-icons {
+        position: absolute;
         bottom: 20px;
         left: 50%; /* Center horizontally */
         transform: translateX(-50%); /* Center horizontally */
         z-index: 9999; /* Ensures the icons are on top of other content */
-}
+      }
 
-.social-icons a {
-    display: inline-block;
+      .main_content .social-icons a {
+        display: inline-block;
         width: 40px; /* Set the width and height of the icons */
         height: 40px;
         border-radius: 50%; /* Make the icons round */
@@ -65,63 +97,198 @@ body {
         font-size: 24px; /* Increase the icon size */
         margin: 0 10px; /* Add spacing between icons */
         color: black; /* Icon color */
-}
+      }
+    </style>
+    <title>Kohpa Contact</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  </head>
 
+  <body>
+    <div id="main">
+      <div class="header_nav">
+        <div class="close_btn" onclick="closeside()">
+          <i class="bx bx-x"></i>
+        </div>
+        <ul class="main_nav">
+          <li><a href="legal.html">Legal</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="solution.html">Solution</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="technoly.html">Technology</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </div>
+      <header class="header">
+        <div>
+          <div class="main_header">
+            <a href="./index.php" class="logo"
+              ><img src="./assets/images/logo.png" alt="" class="img__contain"
+            /></a>
+            <div class="menu_btn" onclick="openside()">
+              MENU
+              <div class="menu_lines">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
-</style>
-<body class="hm-gradient">
-<main>
-    <!--MDB -->
-    <div class="container mt-4">
-        <!--Jumbotron-->
-        <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2" style="background-color: white !important;">
+      <div class="main_content">
+        <div class="container mt-4">
+          <!--Jumbotron-->
+          <div
+            class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2"
+            style="background-color: white !important"
+          >
             <!-- Content goes here -->
             <!--Title-->
-            <h1 class="card-title h2-responsive mt-2 font-bold" style="color: red;"><strong>Get In Touch with KohPa USA</strong></h1>
+            <h1
+              class="card-title h2-responsive mt-2 font-bold"
+              style="color: red"
+            >
+              <strong>Get In Touch with KohPa USA</strong>
+            </h1>
             <!--Subtitle-->
-            <p class="mt-4"><strong style="color: black;">Whether you're looking for more information or need support,
-                    <br>our team is ready to help. Fill out the contact form or reach us
-                    <br> directly via sales contact information.</strong></p>
+            <p class="mt-4">
+              <strong style="color: black"
+                >Whether you're looking for more information or need support,
+                <br />our team is ready to help. Fill out the contact form or
+                reach us <br />
+                directly via sales contact information.</strong
+              >
+            </p>
             <div class="d-flex justify-content-between">
-                <!-- Email section -->
-                <div class="mb-3 d-flex align-items-center">
-                    <div class="mr-2">
-                        <i class="fa fa-envelope" style="color: gray;"></i> <!-- Mail Icon -->
-                    </div>
-                    <div>
-                        <p class="card-text my-2" style="color: black; font-weight: bold;">contact@kohpausa.com</p>
-                    </div>
+              <!-- Email section -->
+              <div class="mb-3 d-flex align-items-center">
+                <div class="mr-2">
+                  <i class="fa fa-envelope" style="color: gray"></i>
+                  <!-- Mail Icon -->
                 </div>
-                <!-- Phone section -->
-                <div class="d-flex align-items-center">
-                    <div class="mr-2">
-                        <i class="fa fa-phone" style="color: gray;"></i> <!-- Phone Icon -->
-                    </div>
-                    <div>
-                        <p class="card-text my-2" style="color: black;font-weight: bold;">+1 (269) 252-2596</p> <!-- Phone number -->
-                        <h6>Phone:</h6> <!-- Label -->
-                    </div>
+                <div>
+                  <p
+                    class="card-text my-2"
+                    style="color: black; font-weight: bold"
+                  >
+                    contact@kohpausa.com
+                  </p>
                 </div>
+              </div>
+              <!-- Phone section -->
+              <div class="d-flex align-items-center">
+                <div class="mr-2">
+                  <i class="fa fa-phone" style="color: gray"></i>
+                  <!-- Phone Icon -->
+                </div>
+                <div>
+                  <p
+                    class="card-text my-2"
+                    style="color: black; font-weight: bold"
+                  >
+                    +1 (269) 252-2596
+                  </p>
+                  <!-- Phone number -->
+                  <h6>Phone:</h6>
+                  <!-- Label -->
+                </div>
+              </div>
             </div>
             <!-- Follow us and newsletter section -->
-            <p class="mt-4"style="color: black;">Follow us on social media and sign up for our newsletter to stay updated on the latest at <br>
-                KohPa USA.</p>
+            <p class="mt-4" style="color: black">
+              Follow us on social media and sign up for our newsletter to stay
+              updated on the latest at <br />
+              KohPa USA.
+            </p>
+          </div>
         </div>
+        <!-- Logo -->
+        <div class="logo">
+          <img src="assets/images/logoone.png" alt="KohPa USA Logo" />
+        </div>
+        <!-- Social media icons -->
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer_bg">
+          <img src="./assets/images/footer_bg.png" alt="" class="img__cover" />
+        </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="footer_main">
+                    <a href="./index.php" class="footer_logo"
+                      ><img
+                        src="./assets/images/logo.png"
+                        alt=""
+                        class="img__contain"
+                    /></a>
+                    <p>
+                      The first paper that conducts electricity and protects
+                      against electromagnetic radiation.
+                    </p>
+                    <ul class="footer_icons">
+                      <li>
+                        <a href="#"><i class="bx bxl-vk"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bx bxl-pinterest-alt"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="footer_head">Navigation</div>
+                  <ul class="footer_nav">
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">News / Blog</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer_head">Get in Touch</div>
+              <ul class="footer_nav">
+                <li><a href="./todaywebuikit.com">todaywebuikit.com</a></li>
+                <li><a href="mail-to:hello@email.com">hello@email.com</a></li>
+                <li><a href="tell:+377 8832 9903">+377 8832 9903</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <!-- Logo -->
-    <div class="logo">
-        <img src="assets/images/logoone.png" alt="KohPa USA Logo">
-    </div>
-    <!-- Social media icons -->
-    <div class="social-icons">
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-    </div>
-</main>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js'></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+  </body>
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/bootstrap.js"></script>
+  <script src="./assets/js/slick.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script src="./assets/js/app.js"></script>
 </html>
